@@ -1,0 +1,24 @@
+:root{
+    --cor-primaria-1: rgba(24,65,81,1);
+    --cor-primaria-2: rgba(27,40,56,1);
+    --cor-secundaria: #171d25;
+    --cor-terciaria-1: rgba(25,82,117,1);
+    --cor-terciaria-2: rgba(35,127,166,1);
+    --cor-texto-1: #ffffff;
+}
+
+header{
+    background: var(--cor-secundaria);
+    color: var(--cor-texto-1);
+}
+
+body{
+    background: linear-gradient(135deg, var(--cor-primaria-1) 40%, var(--cor-primaria-2) 100%);
+    color: var(--cor-texto-1);
+    width: 100vw;
+    height: 100vh;
+}
+
+.produto__preco__deletar{
+    background: linear-gradient(135deg, var(--cor-terciaria-1) 40%, var(--cor-terciaria-2) 100%);
+}

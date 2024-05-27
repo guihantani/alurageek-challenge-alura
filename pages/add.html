@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <main>
+        <header class="cabecalho">
+            <h1 class="cabecalho_titulo">AluraGeek</h1>
+            <div class="cabecalho_navegacao">
+                <a href="loja.html">Loja</a>
+                <a href="">Adicionar Item</a>
+            </div>
+        </header>
+
+        <section class="formulario">
+            <h2>Adicionar Produto:</h2>
+            <div class="formulario__wrap">
+                <form class="formulario__principal">
+                        <label class="campo__etiqueta" for="nome"></label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome..." required>
+
+                        <label class="campo__etiqueta" for="valor"></label>
+                        <input type="number" name="valor" id="valor" placeholder="Valor..." required>
+
+                        <label class="campo__etiqueta" for="imagem">Imagem: </label>
+                        <input type="file" name="imagem" id="imagem" placeholder="Imagem..." accept=".png, .jpg" required>
+
+                        <div class="formulario__botoes">
+                            <input value="Salvar" class="formulario__salvar" id="enviar" data-botao-enviar type="submit">
+                            <button class="formulario__apagar">Apagar</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <h1 class="footer__titulo">AluraGeek</h1>
+            <h3 class="footer__texto">Desenvolvido por Guilherme Hantani</h3>
+            <h4 class="footer__subtexto">Alura One - 2024</h4>
+        </footer>
+    </main>
+</body>
+</html>
