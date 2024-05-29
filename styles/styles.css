@@ -1,24 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root{
     --cor-primaria-1: rgba(24,65,81,1);
     --cor-primaria-2: rgba(27,40,56,1);
     --cor-secundaria: #171d25;
     --cor-terciaria-1: rgba(25,82,117,1);
     --cor-terciaria-2: rgba(35,127,166,1);
-    --cor-texto-1: #ffffff;
+    --cor-texto-1: #C2C2C2;
+    --cor-texto-2: #FFFFFF;
+    --cor-texto-3: #189DFF;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header{
     background: var(--cor-secundaria);
     color: var(--cor-texto-1);
+    font-family: "DM Sans", sans-serif;
 }
 
 body{
+    position: relative;
+    min-height: 100vh;
+}
+
+main{
     background: linear-gradient(135deg, var(--cor-primaria-1) 40%, var(--cor-primaria-2) 100%);
-    color: var(--cor-texto-1);
+    color: var(--cor-texto-2);
     width: 100vw;
     height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    padding-bottom: 15vh;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background: var(--cor-secundaria);
+    color: var(--cor-texto-1);
+    font-family: "DM Sans", sans-serif;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+a:hover:not(.ativo){
+    color: var(--cor-texto-2);
+}
+
+
+.ativo{
+    color: var(--cor-texto-3);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+    border-radius: 20px;
+}
+
+/* Cabeçalho */
+.cabecalho{
+    display: flex;
+    justify-content: start;
+    height: 11vh;
+    gap: 30px;
+}
+
+.cabecalho_titulo{
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    gap: 7px;
+    color: var(--cor-texto-2);
+}
+
+.cabecalho_navegacao{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+/* Produtos */
+.produtos{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 8% 3% 8%;
+    gap: 35px;
+}
+
+.produtos__titulo{
+    align-self: center;
+}
+
+.produto{
+    width: 176px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-self: center;
+    box-shadow: 0 0 5px #000000;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--cor-terciaria-1) 60%, var(--cor-terciaria-2) 100%);
+}
+
+.produtos__wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+    gap: 20px;
+    
+}
+
+.produto__descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .produto__preco__deletar{
-    background: linear-gradient(135deg, var(--cor-terciaria-1) 40%, var(--cor-terciaria-2) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer */
+.footer__titulo{
+    display: flex;
+    height: 42px;
+    align-items: center;
+    gap: 7px;
 }
