@@ -21,18 +21,23 @@
         </header>
 
         <section class="formulario">
-            <h2>Adicionar Produto:</h2>
+            <h2 class="formulario__titulo">Adicionar Produto</h2>
             <div class="formulario__wrap">
                 <form class="formulario__principal">
-                        <label class="campo__etiqueta" for="nome"></label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome..." required>
+                    <div class="campo__wrap">
+                        <label class="campo__etiqueta" for="nome">Nome do Produto</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
 
-                        <label class="campo__etiqueta" for="valor"></label>
-                        <input type="number" name="valor" id="valor" placeholder="Valor..." required>
+                    <div class="campo__wrap">
+                        <label class="campo__etiqueta" for="valor">Preço do Produto</label>
+                        <input type="number" name="valor" id="valor" required>
+                    </div>
 
-                        <label class="campo__etiqueta" for="imagem">Imagem: </label>
+                    <div class="campo__wrap">
+                        <label class="campo__etiqueta" for="imagem">Imagem do Produto </label>
                         <input type="file" name="imagem" id="imagem" placeholder="Imagem..." accept=".png, .jpg" required>
-
+                    </div>
                         <div class="formulario__botoes">
                             <input value="Salvar" class="formulario__salvar" id="enviar" data-botao-enviar type="submit">
                             <button class="formulario__apagar">Apagar</button>
