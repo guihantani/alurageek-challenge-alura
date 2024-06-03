@@ -59,31 +59,6 @@ input{
     border-radius: 2px;
 }
 
-input::file-selector-button {
-    background: linear-gradient(135deg, var(--cor-terciaria-1) 10%, var(--cor-terciaria-2) 100%);
-    border-style: none;
-    color: #fff;
-    cursor: pointer;
-    font-family: "DM Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0;
-    outline: none;
-    overflow: hidden;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 30%;
-    height: 4vh;
-    margin-right: 2%;
-}
-
-input::file-selector-button:hover,
-input::file-selector-button:focus {
-  opacity: .75;
-}
-
 footer{
     position: absolute;
     bottom: 0;

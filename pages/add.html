@@ -23,20 +23,25 @@
         <section class="formulario">
             <h2 class="formulario__titulo">Adicionar Produto</h2>
             <div class="formulario__wrap">
-                <form class="formulario__principal">
+                <form class="formulario__principal" data-formulario>
                     <div class="campo__wrap">
                         <label class="campo__etiqueta" for="nome">Nome do Produto</label>
-                        <input type="text" name="nome" id="nome" required>
+                        <input type="text" name="nome" id="nome" required data-nome>
+                    </div>
+
+                    <div class="campo__wrap">
+                        <label class="campo__etiqueta" for="descricao">Descrição do Produto</label>
+                        <input type="text" name="descricao" id="descricao" required data-descricao>
                     </div>
 
                     <div class="campo__wrap">
                         <label class="campo__etiqueta" for="valor">Preço do Produto</label>
-                        <input type="number" name="valor" id="valor" required>
+                        <input type="number" name="valor" id="valor" required step=".01" data-valor>
                     </div>
 
                     <div class="campo__wrap">
-                        <label class="campo__etiqueta" for="imagem">Imagem do Produto </label>
-                        <input type="file" name="imagem" id="imagem" placeholder="Imagem..." accept=".png, .jpg" required>
+                        <label class="campo__etiqueta" for="imagem">URL da imagem do Produto (1 : 1)</label>
+                        <input type="text" name="imagem" id="imagem" required data-imagem>
                     </div>
                         <div class="formulario__botoes">
                             <input value="Salvar" class="formulario__salvar" id="enviar" data-botao-enviar type="submit">
@@ -55,5 +60,6 @@
             <h4 class="footer__subtexto">Alura One - 2024</h4>
         </footer>
     </main>
+    <script src="../scripts/criarProduto.js" type="module"></script>
 </body>
 </html>
