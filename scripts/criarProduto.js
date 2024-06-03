@@ -1,5 +1,6 @@
 import {api} from "./api.js";
 const formulario = document.querySelector("[data-formulario]");
+const botaoApagar = document.querySelector(".formulario__apagar");
 
 async function criaProduto(evento){
     evento.preventDefault();
@@ -17,4 +18,12 @@ async function criaProduto(evento){
     }
 }
 
+function limparFormulario(){
+    document.querySelector("[data-nome]").value = "";
+    document.querySelector("[data-descricao]").value = "";
+    document.querySelector("[data-valor]").value;
+    document.querySelector("[data-imagem]").value = "";
+}
+
 formulario.addEventListener("submit", evento => criaProduto(evento));
+botaoApagar.addEventListener("click", evento => formulario.reset())
