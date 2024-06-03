@@ -13,6 +13,20 @@
       "valor": "R$100.00",
       "imagem": "../assets/produto2.png",
       "id": 2
+    },
+    {
+      "nome": "Bola de Futebol",
+      "descricao": "Bola de Futebol",
+      "valor": "R$15.50",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_684839-MLB48945961232_012022-O.webp",
+      "id": 3
+    },
+    {
+      "nome": "Pelúcia do Pikachu",
+      "descricao": "Pelúcia do Pikachu",
+      "valor": "R$75.00",
+      "imagem": "https://m.media-amazon.com/images/I/51HT+C8WWQL._AC_UF894,1000_QL80_.jpg",
+      "id": 4
     }
   ]
 }
